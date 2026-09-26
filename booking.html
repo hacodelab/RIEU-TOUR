@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Zanzibar Tour</title>
+
+    <!-- Your main CSS -->
+    <link rel="stylesheet" href="css/booking.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="booking-header">
+
+    <div class="booking-nav">
+
+        <a href="index.html" class="booking-logo">
+            Zanzibar Tours
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mnemba.html">Mnemba Tour</a>
+            <a href="booking.html" class="nav-book-btn">Book Now</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     BOOKING HERO
+===================================================== -->
+
+<section class="booking-hero">
+
+    <div class="booking-hero-content">
+
+        <span>PLAN YOUR ADVENTURE</span>
+
+        <h1>Book Your Zanzibar Experience</h1>
+
+        <p>
+            Complete the form below and start planning your
+            unforgettable Zanzibar adventure with us.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BOOKING SECTION
+===================================================== -->
+
+<section class="booking-section">
+
+    <div class="booking-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="booking-info">
+
+            <span class="small-title">BOOK YOUR TOUR</span>
+
+            <h2>Your Zanzibar Adventure Starts Here</h2>
+
+            <p>
+                Choose your preferred tour, travel date and number
+                of guests. Our team will contact you to confirm
+                availability and arrange the final details.
+            </p>
+
+
+            <div class="booking-benefit">
+
+                <div class="benefit-icon">✓</div>
+
+                <div>
+                    <h3>Easy Booking</h3>
+                    <p>Send your booking request in just a few minutes.</p>
+                </div>
+
+            </div>
+
+
+            <div class="booking-benefit">
+
+                <div class="benefit-icon">✓</div>
+
+                <div>
+                    <h3>Local Tour Team</h3>
+                    <p>
+                        Explore Zanzibar with an experienced local team.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="booking-benefit">
+
+                <div class="benefit-icon">✓</div>
+
+                <div>
+                    <h3>Quick Confirmation</h3>
+                    <p>
+                        We will contact you after receiving your request.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE / FORM -->
+
+        <div class="booking-form-card">
+
+            <div class="form-heading">
+
+                <span>RESERVATION</span>
+
+                <h2>Book Your Tour</h2>
+
+                <p>Fill in your travel details below.</p>
+
+            </div>
+
+
+            <form
+                id="bookingForm"
+                action="https://formsubmit.co/rieutoursandsafaris@gmail.com"
+                method="POST"
+            >
+
+                <!-- FORMSUBMIT SETTINGS -->
+                <input type="hidden" name="_subject" value="New Zanzibar Tour Booking Request">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thank-you.html">
+                <input type="hidden" name="_captcha" value="false">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">Full Name *</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL + PHONE -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address *</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">WhatsApp / Phone *</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+255..."
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TOUR -->
+
+                <div class="form-group">
+
+                    <label for="tour">Choose Tour *</label>
+
+                    <select id="tour" name="tour" required>
+
+                        <option value="">Select your tour</option>
+
+                        <option value="Mnemba Island Tour">
+                            Mnemba Island Tour
+                        </option>
+
+                        <option value="Safari Blue">
+                            Safari Blue
+                        </option>
+
+                        <option value="Stone Town Tour">
+                            Stone Town Tour
+                        </option>
+
+                        <option value="Prison Island Tour">
+                            Prison Island Tour
+                        </option>
+
+                        <option value="Spice Farm Tour">
+                            Spice Farm Tour
+                        </option>
+
+                        <option value="Jozani Forest">
+                            Jozani Forest
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- DATE -->
+
+                <div class="form-group">
+
+                    <label for="date">Tour Date *</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PEOPLE -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="adults">Adults *</label>
+
+                        <select id="adults" name="adults" required>
+
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                            <option value="5">5 Adults</option>
+                            <option value="6">6 Adults</option>
+                            <option value="7">7 Adults</option>
+                            <option value="8">8 Adults</option>
+                            <option value="9">9 Adults</option>
+                            <option value="10+">10+ Adults</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="children">Children</label>
+
+                        <select id="children" name="children">
+
+                            <option value="0">No Children</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                            <option value="3">3 Children</option>
+                            <option value="4">4 Children</option>
+                            <option value="5+">5+ Children</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- HOTEL -->
+
+                <div class="form-group">
+
+                    <label for="hotel">Hotel / Pickup Location *</label>
+
+                    <input
+                        type="text"
+                        id="hotel"
+                        name="hotel"
+                        placeholder="Example: Nungwi Beach Hotel"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Special Requests
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us about any special requests..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- BUTTON -->
+
+                <button type="submit" class="booking-submit">
+
+                    Send Booking Request →
+
+                </button>
+
+
+                <p class="booking-note">
+                    Your booking will be confirmed after our team
+                    contacts you.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="booking-footer">
+
+    <div>
+
+        <h3>Zanzibar Tours</h3>
+
+        <p>
+            Discover unforgettable experiences in beautiful Zanzibar.
+        </p>
+
+    </div>
+
+    <p>
+        © 2026 Zanzibar Tours. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    /* Prevent booking past dates */
+
+    const dateInput = document.getElementById("date");
+
+    const today = new Date().toISOString().split("T")[0];
+
+    dateInput.min = today;
+
+
+
+    /* Get tour from URL */
+
+    const params = new URLSearchParams(window.location.search);
+
+    const selectedTour = params.get("tour");
+
+    if (selectedTour) {
+
+        const tourSelect = document.getElementById("tour");
+
+        for (let option of tourSelect.options) {
+
+            if (
+                option.value.toLowerCase() ===
+                selectedTour.toLowerCase()
+            ) {
+
+                option.selected = true;
+
+                break;
+
+            }
+
+        }
+
+    }
+
+    /* Form now submits for real to FormSubmit, which emails
+       the booking to rieutoursandsafaris@gmail.com — no
+       JavaScript submit-blocking needed here anymore. */
+
+</script>
+
+
+</body>
+
+</html>
